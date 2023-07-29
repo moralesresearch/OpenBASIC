@@ -1,6 +1,7 @@
 # OpenBASIC 5.2 - MR-DOS 3.3
 
 (C) 1982-2022 Abdon Morales
+
 (C) 1977-1980 Apple Computer Inc.
 
 ## Introduction
