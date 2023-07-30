@@ -33,8 +33,8 @@ def main():
 
     banner = (
         """
-                        OpenBASIC v5.2 - MR-DOS 3.3
-                                April 1983
+                        OpenBASIC v5.4(F) - MR-DOS 3.3(M)
+                                    July 2023
         
         
         
@@ -54,7 +54,7 @@ def main():
     # the user enters 'EXIT'
     while True:
 
-        stmt = input('] ')
+        stmt = input('BASIC> ')
 
         try:
             tokenlist = lexer.tokenize(stmt)
@@ -111,20 +111,21 @@ def main():
                 # Save the program to disk
                 elif tokenlist[0].category == Token.SAVE:
                     program.save(tokenlist[1].lexeme)
-                    print("Program written to file")
+                    print("Program SAVED to file")
 
                 # Load the program from disk
                 elif tokenlist[0].category == Token.LOAD:
                     program.load(tokenlist[1].lexeme)
-                    print("Program read from file")
+                    print("Program LOADED from file")
 
                 # Delete the program from memory
                 elif tokenlist[0].category == Token.NEW:
                     program.delete()
+                    print("CLEARED from memory")
 
                 # Unrecognised input
                 else:
-                    print("Unrecognised input", file=stderr)
+                    print("ERROR! Unrecognised input", file=stderr)
                     for token in tokenlist:
                         token.print_lexeme()
                     print(flush=True)
