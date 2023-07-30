@@ -1,6 +1,6 @@
-# OpenBASIC 5.2 - MR-DOS 3.3
+# OpenBASIC 5.4(F) - MR-DOS 3.3
 
-(C) 1982-2022 Abdon Morales
+(C) 1982-2023 Abdon Morales
 
 (C) 1977-1980 Apple Computer Inc.
 
@@ -1074,3 +1074,5 @@ error, Python will silently convert them to integers.
 
 OpenBASIC 5.2 and above is made available under the MIT License.
 The Morales Research Disk Operating System 3.3 and below is made avaliable under the Free Research License (version 2.0).
+
+OpenBASIC v5.4 and MR-DOS 3.3 will be the final release, works are on OpenBASIC v6.0 with uDOS v1.10 or in our next project UT Pascal DOS.
